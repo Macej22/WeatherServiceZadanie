@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: weatherservice-config
+data:
+  Jwt__Issuer: "WeatherService"
+  Jwt__Audience: "WeatherServiceClients"
+  WeatherApi__BaseUrl: "https://nejakepocasie.net"
+  WeatherApi__UseFake: "true"
